@@ -1,2 +1,11 @@
 # Content-Based-Image-Retrieval
-Calculate color histograms (gray scale with 8 bins or 256 bins / rgb with 256 bins) or local binary pattern(LBP) histograms, or add both of them. Then use distance function like euclidean, correlation to retrieve similar images from the database.
+- First step: calculate the histogram of query image
+- 1. Color histograms
+- - 1. Gray scale image with 8 bins
+- - 2. Gray scale image with 256 bins
+- - 3. RGB image with 256 bins
+- 2. Local Binary Pattern (LBP) histograms
+- - 1. Whole-image lbp histogram
+- - 2. Grid-image with 32 bins for each 16x16 grid
+- Second step: use distance function to find similar image and rank them
+- - For example: euclidean, cityblock, correlation, canberra...
